@@ -9,7 +9,7 @@ const cors = require('cors')
  //require('./v1/databases/init.mongodb')
  //require('./v1/databases/init.redis')
 
-// microservice
+
 
 
 
@@ -27,7 +27,7 @@ app.use(express.urlencoded({
 }))
 
 //router
-//app.use(require('./v1/routes/apiV1.router'))
+app.use(require('./v1/routes/apiV1.router'))
 
 // Error Handling Middleware called
 
