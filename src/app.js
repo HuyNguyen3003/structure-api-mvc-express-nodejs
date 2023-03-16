@@ -3,11 +3,15 @@ const app = express();
 const helmet = require('helmet')
 const morgan = require('morgan')
 const compression = require('compression')
-var cors = require('cors')
+const cors = require('cors')
 
 //init dbs 
  //require('./v1/databases/init.mongodb')
- require('./v1/databases/init.redis')
+ //require('./v1/databases/init.redis')
+
+// microservice
+
+
 
 //user middleware
 app.use(helmet())
@@ -23,7 +27,7 @@ app.use(express.urlencoded({
 }))
 
 //router
-app.use(require('./v1/routes/apiV1.router'))
+//app.use(require('./v1/routes/apiV1.router'))
 
 // Error Handling Middleware called
 
